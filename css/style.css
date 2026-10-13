@@ -18,3 +18,20 @@ a {
     color: inherit; /* herda cor do pai */
 }
 
+.header {
+    height: 64px;
+
+    display: flex; /* se organizam em única direção */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* joga um pro lado e um pro outro */
+
+    padding: 0 28px;
+
+    border-top: 4px solid #222;
+    border-bottom: 1px solid #7da8ad;
+
+    background-color: #ffffff;
+}
+
+
+
