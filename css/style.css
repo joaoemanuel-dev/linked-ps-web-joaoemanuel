@@ -56,7 +56,7 @@ a {
     opacity: 0.6; /* quando o mouse estiver em cima do link, 60% opaco*/
 }
 
-.navbar a:focus-visible { /* pra quem tiver navegando com alt tab*/
+.navbar a:focus-visible { /* pra quem tiver navegando com tab*/
     outline: 2px solid #005052; /* contorno */
     outline-offset: 4px; /* 4 px afastado do link*/
 }
