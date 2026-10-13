@@ -21,7 +21,7 @@ a {
 .header {
     height: 64px;
 
-    display: flex; /* se organizam em única direção */
+    display: flex; /* se organizam em única direção lado a lado */
     align-items: center; /* centraliza verticalmente */
     justify-content: space-between; /* joga um pro lado e um pro outro */
 
@@ -38,5 +38,10 @@ a {
     font-size: 22px;
 }
 
+.navbar {
+    display: flex;
+    align-items: center;
 
+    gap: 34px; /* espeçamento entre os itens */
+}
 
