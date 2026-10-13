@@ -45,3 +45,19 @@ a {
     gap: 34px; /* espaçamento entre os itens */
 }
 
+/* estiliza os links que ficam dentro da navbar */
+.navbar a {
+    font-size: 17px;
+
+    transition: opacity 0.2s ease; /* quando a opacidade mudar vai ser em 0.2s, suave */
+}
+
+.navbar a:hover {
+    opacity: 0.6; /* quando o mouse estiver em cima do link, 60% opaco*/
+}
+
+.navbar a:focus-visible { /* pra quem tiver navegando com alt tab*/
+    outline: 2px solid #005052; /* contorno */
+    outline-offset: 4px; /* 4 px afastado do link*/
+}
+
