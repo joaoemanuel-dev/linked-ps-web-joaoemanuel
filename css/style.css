@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* deslizar suavemente */
+}
+
 body {
     font-family: Arial, sans-serif;
+    color: #111;
 }
+
+a {
+    text-decoration: none; /* tira o sublinhado padrão dos links */
+    color: inherit; /* herda cor do pai */
+}
+
