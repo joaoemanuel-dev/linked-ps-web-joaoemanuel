@@ -72,7 +72,7 @@ a {
 }
 
 .hero-content {
-    position: relative;
+    position: relative; /* vai servir como referência para a imagem filha */
 
     width: 50%;
     height: 100%;
@@ -162,6 +162,20 @@ a {
 
     border: 1px solid currentColor;
     border-radius: 50%;
+}
+
+.hero-image {
+    position: absolute; /* coloco em relação ao pai */
+
+    top: 0; /* cola no topo e na direita */
+    right: 0;
+
+    width: 56%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 48% 0 0 48%;
 }
 
 
