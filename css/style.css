@@ -4,6 +4,199 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* deslizar suavemente */
+}
+
 body {
     font-family: Arial, sans-serif;
+    color: #111;
 }
+
+a {
+    text-decoration: none; /* tira o sublinhado padrão dos links */
+    color: inherit; /* herda cor do pai */
+}
+
+.header {
+    height: 64px;
+
+    display: flex; /* se organizam em única direção lado a lado */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* joga um pro lado e um pro outro */
+
+    padding: 0 28px;
+
+    border-top: 4px solid #222;
+    border-bottom: 1px solid #7da8ad;
+
+    background-color: #ffffff;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    gap: 34px; /* espaçamento entre os itens */
+}
+
+/* estiliza os links que ficam dentro da navbar */
+.navbar a {
+    font-size: 17px;
+
+    transition: opacity 0.2s ease; /* quando a opacidade mudar vai ser em 0.2s, suave */
+}
+
+.navbar a:hover {
+    opacity: 0.6; /* quando o mouse estiver em cima do link, 60% opaco*/
+}
+
+.navbar a:focus-visible { /* pra quem tiver navegando com tab*/
+    outline: 2px solid #005052; /* contorno */
+    outline-offset: 4px; /* 4 px afastado do link*/
+}
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 575px;
+
+    overflow: hidden; /* some com oq vazar, só deixa oq caber dentro da div */
+
+    background-color: #ffffff;
+}
+
+.hero-content {
+    position: relative; /* vai servir como referência para a imagem filha */
+
+    width: 50%;
+    height: 100%;
+
+    padding: 20px 0 0 46px;
+
+    z-index: 2; /* ordem de sobreposição */
+}
+
+.hero-description {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+    letter-spacing: 1px; /* distância entre as letras */
+}
+
+.hero-main {
+    width: 410px;
+
+    margin-top: 123px;
+}
+
+.hero-main h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-bottom: 16px;
+}
+
+.hero-main > p {
+    width: 390px; /* limita a largura para pular de linha */
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    line-height: 1.25; /* espaçamento entre as linhas */
+
+    margin-bottom: 42px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+}
+
+.button {
+    display: inline-flex; /* flex box e em linha ao mesmo tempo */
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 6px 13px;
+
+    border: 1px solid #005052;
+    border-radius: 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.button-primary {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.button-secondary {
+    background-color: #ffffff;
+    color: #005052;
+}
+
+.button-primary:hover {
+    background-color: #003f40;
+}
+
+.button-secondary:hover {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.button-icon { /* quadrado que arredonda as bordas*/
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+
+.hero-image {
+    position: absolute; /* coloco em relação ao pai */
+
+    top: 0; /* cola no topo e na direita */
+    right: 0;
+
+    width: 56%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: 48% 0 0 48%;
+
+    box-shadow:
+        -14px 0 0 rgba(255, 255, 255, 0.35),
+        -28px 0 0 rgba(210, 220, 230, 0.35),
+        -42px 0 0 rgba(255, 255, 255, 0.25);
+
+    z-index: 1
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* preenche tudo com imagem, sem deformar */
+
+    display: block; /* nova linha e ocupa largura toda */
+}
+
+
+
+
