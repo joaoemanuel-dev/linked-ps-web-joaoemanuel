@@ -197,6 +197,15 @@ a {
     display: block; /* nova linha e ocupa largura toda */
 }
 
+.services {
+    min-height: 585px;
 
+    padding: 95px 20px;
+
+    background-color: #004346;
+    color: #ffffff;
+
+    text-align: center;
+}
 
 
