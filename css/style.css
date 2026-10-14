@@ -71,3 +71,22 @@ a {
     background-color: #ffffff;
 }
 
+.hero-content {
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+
+    padding: 20px 0 0 44px;
+
+    z-index: 2; /* ordem de sobreposição */
+}
+
+.hero-description {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+    letter-spacing: 1px; /* distância entre as letras */
+}
+
+
