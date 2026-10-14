@@ -103,7 +103,7 @@ a {
 }
 
 .hero-main > p {
-    width: 390px;
+    width: 390px; /* limita a largura para pular de linha */
 
     font-family: Georgia, "Times New Roman", serif;
 
@@ -111,6 +111,13 @@ a {
     line-height: 1.25; /* espaçamento entre as linhas */
 
     margin-bottom: 39px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
 }
 
 
