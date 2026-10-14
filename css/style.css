@@ -93,6 +93,26 @@ a {
     margin-top: 123px;
 }
 
+.hero-main h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-bottom: 16px;
+}
+
+.hero-main > p {
+    width: 390px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    line-height: 1.25; /* espaçamento entre as linhas */
+
+    margin-bottom: 39px;
+}
+
 
 
 
