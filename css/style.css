@@ -198,7 +198,7 @@ a {
 }
 
 .services {
-    min-height: 585px;
+    min-height: 585px; /* mínimo, pode crescer se precisar */
 
     padding: 95px 20px;
 
@@ -208,4 +208,12 @@ a {
     text-align: center;
 }
 
+.services-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 50px;
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
 
