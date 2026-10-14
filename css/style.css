@@ -120,6 +120,23 @@ a {
     gap: 34px;
 }
 
+.button {
+    display: inline-flex; /* flex box e em linha ao mesmo tempo */
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 6px 13px;
+
+    border: 1px solid #005052;
+    border-radius: 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
 
 
 
