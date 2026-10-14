@@ -61,3 +61,13 @@ a {
     outline-offset: 4px; /* 4 px afastado do link*/
 }
 
+.hero {
+    position: relative;
+
+    height: 575px;
+
+    overflow: hidden; /* some com oq vazar, só deixa oq caber dentro da div */
+
+    background-color: #ffffff;
+}
+
