@@ -178,5 +178,15 @@ a {
     border-radius: 48% 0 0 48%;
 }
 
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* preenche tudo com imagem, sem deformar */
+
+    display: block; /* nova linha e ocupa largura toda */
+}
+
+
 
 
