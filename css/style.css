@@ -142,6 +142,27 @@ a {
     color: #ffffff;
 }
 
+.button-secondary {
+    background-color: #ffffff;
+    color: #005052;
+}
+
+.button-primary:hover {
+    background-color: #003f40;
+}
+
+.button-secondary:hover {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.button-icon { /* quadrado que arredonda as bordas*/
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
 
 
 
