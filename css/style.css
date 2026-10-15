@@ -281,3 +281,12 @@ a {
 
     font-size: 18px;
 }
+
+.schedule-line {
+    width: 140px;
+    height: 1px;
+
+    margin: 14px auto 22px;
+
+    background-color: #7da8ad;
+}
