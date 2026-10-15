@@ -245,3 +245,18 @@ a {
     font-size: 21px;
     line-height: 1.28;
 }
+
+.schedule {
+    position: relative;
+
+    min-height: 620px;
+
+    padding: 60px 20px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    overflow: hidden;
+}
+
+
