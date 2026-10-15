@@ -338,3 +338,19 @@ a {
 
     border-radius: 9px;
 }
+
+.schedule-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.schedule-row:not(:last-child) { /* coloca linha entre os horários */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
