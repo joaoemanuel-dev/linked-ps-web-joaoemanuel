@@ -314,3 +314,9 @@ a {
 
     z-index: 2;
 }
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
