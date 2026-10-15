@@ -266,3 +266,18 @@ a {
 
     z-index: 2; /* garantir que fique na frente dos trevos */
 }
+
+.schedule-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+    font-weight: normal;
+
+    margin-bottom: 6px;
+}
+
+.schedule-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+}
