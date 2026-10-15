@@ -382,3 +382,12 @@ a {
 
     transform: rotate(12deg);
 }
+
+.feedbacks {
+    min-height: 610px;
+
+    padding: 65px 65px;
+
+    background-color: #004346;
+    color: #ffffff;
+}
