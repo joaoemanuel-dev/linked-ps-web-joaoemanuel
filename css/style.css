@@ -354,3 +354,13 @@ a {
 .schedule-row:not(:last-child) { /* coloca linha entre os horários */
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+.schedule-decoration { /* comum aos trevos */
+    position: absolute;
+
+    opacity: 0.35;
+
+    z-index: 0;
+
+    pointer-events: none; /* img não deve atrapalhar os cliques */
+}
