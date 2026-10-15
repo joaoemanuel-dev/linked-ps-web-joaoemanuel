@@ -217,3 +217,24 @@ a {
     margin-bottom: 8px;
 }
 
+.services-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-line {
+    width: 130px;
+    height: 1px;
+
+    margin: 28px auto 35px; /* auto centraliza horizontalmente */
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.services-content {
+    max-width: 650px; /* pode dimninuir, mas nunca ultrpassar */
+
+    margin: 0 auto; /* centraliza a caixa */
+}
