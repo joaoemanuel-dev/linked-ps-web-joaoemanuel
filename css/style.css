@@ -364,3 +364,12 @@ a {
 
     pointer-events: none; /* img não deve atrapalhar os cliques */
 }
+
+.decoration-left {
+    width: 500px;
+
+    left: -170px;
+    bottom: -40px;
+
+    transform: rotate(-15deg);
+}
