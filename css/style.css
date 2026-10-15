@@ -245,3 +245,140 @@ a {
     font-size: 21px;
     line-height: 1.28;
 }
+
+.schedule {
+    position: relative;
+
+    min-height: 620px;
+
+    padding: 60px 20px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    overflow: hidden;
+}
+
+.schedule-header {
+    position: relative;
+
+    text-align: center;
+
+    z-index: 2; /* garantir que fique na frente dos trevos */
+}
+
+.schedule-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+    font-weight: normal;
+
+    margin-bottom: 6px;
+}
+
+.schedule-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+}
+
+.schedule-line {
+    width: 140px;
+    height: 1px;
+
+    margin: 14px auto 22px;
+
+    background-color: #7da8ad;
+}
+
+.schedule-card {
+    position: relative;
+
+    width: 620px;
+    min-height: 300px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* distribui espaço em volta */
+
+    padding: 35px 45px;
+
+    border: 1px solid #557779;
+    border-radius: 9px;
+
+    background-color: rgba(255, 255, 255, 0.72);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 2;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-image {
+    width: 130px;
+    height: 130px;
+
+    object-fit: contain; /* mostre a imagem inteira, mesmo que sobre espaço */
+}
+
+.schedule-times {
+    width: 350px;
+
+    padding: 18px;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    border-radius: 9px;
+}
+
+.schedule-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.schedule-row:not(:last-child) { /* coloca linha entre os horários */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.schedule-decoration { /* comum aos trevos */
+    position: absolute;
+
+    opacity: 0.35;
+
+    z-index: 0;
+
+    pointer-events: none; /* img não deve atrapalhar os cliques */
+}
+
+.decoration-left {
+    width: 500px;
+
+    left: -170px;
+    bottom: -40px;
+
+    transform: rotate(-15deg);
+}
+
+.decoration-right {
+    width: 500px;
+
+    top: -190px;
+    right: -120px;
+
+    transform: rotate(12deg);
+}
