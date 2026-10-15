@@ -325,5 +325,16 @@ a {
     width: 130px;
     height: 130px;
 
-    object-fit: contain;
+    object-fit: contain; /* mostre a imagem inteira, mesmo que sobre espaço */
+}
+
+.schedule-times {
+    width: 350px;
+
+    padding: 18px;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    border-radius: 9px;
 }
