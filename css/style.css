@@ -238,3 +238,10 @@ a {
 
     margin: 0 auto; /* centraliza a caixa */
 }
+
+.services-content p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+    line-height: 1.28;
+}
