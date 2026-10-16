@@ -592,5 +592,14 @@ a {
     z-index: 2;
 }
 
+.contact-form-header {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+}
+
 
 
