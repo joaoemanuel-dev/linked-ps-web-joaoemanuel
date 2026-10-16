@@ -476,7 +476,7 @@ a {
 }
 
 .contact {
-    position: relative;
+    position: relative; /* vamos posicionar os trevos com absolute */
 
     min-height: 740px;
 
@@ -487,4 +487,6 @@ a {
 
     overflow: hidden;
 }
+
+
 
