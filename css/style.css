@@ -555,7 +555,7 @@ a {
 }
 
 .contact-map {
-    width: 470px;
+    max-width: 600px;
     height: 315px;
 
     overflow: hidden;
