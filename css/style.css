@@ -488,5 +488,33 @@ a {
     overflow: hidden;
 }
 
+.contact-top {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto 65px;
+
+    display: flex; /* lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 80px;
+
+    z-index: 2;
+}
+
+.contact-address {
+    width: 340px;
+    min-height: 315px;
+
+    padding: 45px 32px;
+
+    background-color: #004346;
+    color: #ffffff;
+
+    border-radius: 9px;
+}
+
 
 
