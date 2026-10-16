@@ -628,4 +628,16 @@ a {
     flex-direction: column; /* um embaixo do outro */
 }
 
+.contact-form label {
+    padding: 4px 10px 2px;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    border-radius: 10px 10px 0 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+}
+
 
