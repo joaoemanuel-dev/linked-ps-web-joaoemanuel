@@ -601,5 +601,12 @@ a {
     margin-bottom: 22px;
 }
 
+.contact-form-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
 
 
