@@ -694,4 +694,7 @@ a {
     cursor: pointer;
 }
 
-
+.contact-button:hover {
+    background-color: #005052;
+    color: #ffffff;
+}
