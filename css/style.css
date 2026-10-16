@@ -475,3 +475,16 @@ a {
     display: block; /* ocupa toda a extensão */
 }
 
+.contact {
+    position: relative;
+
+    min-height: 740px;
+
+    padding: 25px 65px 60px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    overflow: hidden;
+}
+
