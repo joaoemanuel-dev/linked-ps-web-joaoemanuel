@@ -744,3 +744,11 @@ a {
 
     align-items: flex-start;
 }
+
+.footer-column h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    margin-bottom: 22px;
+}
