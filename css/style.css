@@ -657,4 +657,41 @@ a {
     font-size: 14px;
 }
 
+.contact-form input {
+    height: 22px;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-form textarea {
+    height: 45px;
+
+    resize: none;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-button {
+    align-self: center;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    padding: 6px 14px;
+
+    border: 1px solid #005052;
+    border-radius: 14px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
 
