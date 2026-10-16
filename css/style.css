@@ -416,3 +416,20 @@ a {
 
     margin-bottom: 4px;
 }
+
+.feedbacks-subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.feedbacks-line {
+    width: 130px;
+    height: 1px;
+
+    margin-bottom: 38px;
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
