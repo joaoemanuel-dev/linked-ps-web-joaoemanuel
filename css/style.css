@@ -608,5 +608,24 @@ a {
     font-weight: bold;
 }
 
+.form-divider {
+    width: 1px;
+    height: 28px;
+
+    background-color: #005052;
+}
+
+.contact-form-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    color: #80a4a6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+}
 
 
