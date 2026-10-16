@@ -446,3 +446,13 @@ a {
 
     margin-bottom: 20px;
 }
+
+.feedback-item span {
+    display: block;
+
+    margin-left: 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+}
