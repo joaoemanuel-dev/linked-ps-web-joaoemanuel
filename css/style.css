@@ -782,3 +782,27 @@ a {
     font-size: 17px;
     line-height: 1.25;
 }
+
+.social-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
