@@ -640,4 +640,21 @@ a {
     font-size: 12px;
 }
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    padding: 7px 10px;
+
+    border: none;
+    outline: none;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
 
