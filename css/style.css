@@ -719,3 +719,10 @@ a {
 
     transform: rotate(10deg);
 }
+
+.footer {
+    padding: 28px 60px;
+
+    background-color: #004346;
+    color: #ffffff;
+}
