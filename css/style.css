@@ -448,11 +448,20 @@ a {
 }
 
 .feedback-item span {
-    display: block;
+    display: block; 
 
     margin-left: 16px;
 
     font-family: Georgia, "Times New Roman", serif;
 
     font-size: 17px;
+}
+
+.feedbacks-image {
+    width: 370px;
+    height: 455px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
 }
