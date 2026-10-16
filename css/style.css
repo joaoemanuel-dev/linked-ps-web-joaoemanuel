@@ -752,3 +752,15 @@ a {
 
     margin-bottom: 22px;
 }
+
+.footer-column a {
+    margin-bottom: 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    color: #ffffff;
+
+    transition: opacity 0.2s ease;
+}
