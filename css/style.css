@@ -698,3 +698,31 @@ a {
     background-color: #005052;
     color: #ffffff;
 }
+
+.contact-decoration {
+    position: absolute;
+
+    opacity: 0.25;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.contact-decoration-left {
+    width: 500px;
+
+    left: -170px;
+    top: -100px;
+
+    transform: rotate(-15deg);
+}
+
+.contact-decoration-right {
+    width: 500px;
+
+    right: -180px;
+    bottom: -150px;
+
+    transform: rotate(10deg);
+}
