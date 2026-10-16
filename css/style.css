@@ -407,3 +407,12 @@ a {
 .feedbacks-text {
     width: 460px;
 }
+
+.feedbacks-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+    font-weight: normal;
+
+    margin-bottom: 4px;
+}
