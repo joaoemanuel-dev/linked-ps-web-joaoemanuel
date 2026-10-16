@@ -575,5 +575,22 @@ a {
     display: block;
 }
 
+.contact-form-container {
+    position: relative;
+
+    width: 630px;
+
+    margin: 0 auto;
+
+    padding: 20px 24px 28px;
+
+    border: 1px solid #6f9a9c;
+    border-radius: 9px;
+
+    background-color: rgba(255, 255, 255, 0.72);
+
+    z-index: 2;
+}
+
 
 
