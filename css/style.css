@@ -437,3 +437,12 @@ a {
 .feedback-item {
     margin-bottom: 25px;
 }
+
+.feedback-item p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
