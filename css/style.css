@@ -539,5 +539,32 @@ a {
     font-size: 15px;
 }
 
+.address-content strong {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.address-content p {
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.contact-map {
+    width: 470px;
+    height: 315px;
+
+    overflow: hidden;
+
+    border: 1px solid #a0a0a0;
+    border-radius: 9px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 
 
