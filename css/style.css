@@ -726,3 +726,14 @@ a {
     background-color: #004346;
     color: #ffffff;
 }
+
+.footer-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 60px;
+}
