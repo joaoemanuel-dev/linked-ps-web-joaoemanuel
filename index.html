@@ -5,14 +5,13 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Largura real da tela no dispositivo -->
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Linked - Psicólogos</title>
 
-    <link rel="stylesheet" href="./css/style.css"> <!-- Link do css -->
+    <link rel="stylesheet" href="./css/style.css"> 
 </head>
 
-<body> <!-- tudo que aparece na tela -->
+<body> 
 
     <header class="header">
 
@@ -21,7 +20,7 @@
         </a>
 
         <nav class="navbar">
-            <a href="#inicio">Início</a> <!-- direciona para aquele ponto da página com esse id -->
+            <a href="#inicio">Início</a> 
             <a href="#servicos">Serviços</a>
             <a href="#horarios">Horários</a>
             <a href="#feedbacks">Feedbacks</a>
@@ -64,16 +63,15 @@
     
                     </div>
 
-                    <!--<div class="hero-image">
-                        <img
-                            src="./assets/images/hero.png"
-                            alt="Atendimento psicológico em consultório"
-                        >
-                    </div> -->
-    
-
                 </div>
 
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="./assets/images/hero.png"
+                    alt="Atendimento psicológico em consultório"
+                >
             </div>
 
         </section>
@@ -230,6 +228,94 @@
                 </div>
 
             </div>
+
+        </section>
+
+        <section class="contact" id="contato">
+
+            <img
+                src="./assets/images/trevo.png"
+                alt=""
+                class="contact-decoration contact-decoration-left"
+            >
+
+            <img
+                src="./assets/images/trevo.png"
+                alt=""
+                class="contact-decoration contact-decoration-right"
+            >
+
+            <div class="contact-top">
+
+                <div class="contact-address">
+
+                    <h2>Visite-nos</h2>
+
+                    <div class="address-content">
+
+                        <span class="address-icon">📍</span>
+    
+                        <div>
+                            <strong>ENDEREÇO:</strong>
+        
+                            <p>
+                                Rua, número<br>
+                                Bairro
+                            </p>
+        
+                            <p>CEP: 40028922</p>
+                        </div>
+
+                    </div>
+    
+                </div>
+
+                <div class="contact-map">
+
+                    <img
+                        src="./assets/images/mapa.png"
+                        alt="Mapa com a localização do consultório"
+                    >
+        
+                </div>    
+
+            </div>
+
+            <div class="contact-form-container">
+
+                <div class="contact-form-header">
+
+                    <h2>Formulário de contato</h2>
+        
+                    <div class="form-divider"></div>
+        
+                    <p>
+                        Ficou com alguma dúvida? Converse diretamente conosco!
+                    </p>
+        
+                </div>
+
+                <form class="contact-form">
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+        
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+        
+                    <label for="obs">Obs:</label>
+                    <textarea id="obs" name="obs"></textarea>
+        
+                    <button type="submit" class="contact-button">
+                        <span class="button-icon"></span>
+                        ENVIAR
+                    </button>
+        
+                </form>
+
+            </div>
+
+            
 
         </section>
     
