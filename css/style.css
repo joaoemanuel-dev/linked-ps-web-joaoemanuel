@@ -531,7 +531,14 @@ a {
 }
 
 .address-icon {
-    font-size: 15px;
+    width: 18px;
+    height: 24px;
+
+    object-fit: contain;
+
+    margin-top: 1px;
+
+    flex-shrink: 0;
 }
 
 .address-content strong {
