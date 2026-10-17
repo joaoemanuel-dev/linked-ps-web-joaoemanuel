@@ -806,3 +806,26 @@ a {
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
+
+/* ==========================================================
+   RESPONSIVIDADE
+   Desktop (>= 1024px): usa as regras acima.
+   Tablet  (769px a 1023px): ajustes leves.
+   Mobile  (<= 768px): layout em coluna.
+   ========================================================== */
+
+/* ---------- Tablet e telas menores que o desktop ---------- */
+@media (max-width: 1023px) {
+
+    /* texto do hero não pode passar da coluna dele */
+    .hero-main {
+        width: 100%;
+        max-width: 410px;
+    }
+    
+    .hero-main > p {
+        width: 100%;
+        max-width: 390px;
+    }
+
+}
