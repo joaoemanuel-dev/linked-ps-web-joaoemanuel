@@ -327,7 +327,7 @@ a {
 
     padding: 18px;
 
-    background-color: #005052;
+    background-color: #004346;
     color: #ffffff;
 
     border-radius: 9px;
@@ -362,16 +362,17 @@ a {
 .decoration-left {
     width: 500px;
 
-    left: -170px;
+    left: -120px;
     bottom: -40px;
 
-    transform: rotate(-15deg);
+    transform: rotate(-12deg);
+    
 }
 
 .decoration-right {
     width: 500px;
 
-    top: -190px;
+    top: -40px;
     right: -120px;
 
     transform: rotate(12deg);
@@ -706,7 +707,7 @@ a {
 .contact-decoration-left {
     width: 500px;
 
-    left: -170px;
+    left: -100px;
     top: -100px;
 
     transform: rotate(-15deg);
@@ -715,8 +716,8 @@ a {
 .contact-decoration-right {
     width: 500px;
 
-    right: -180px;
-    bottom: -150px;
+    right: -100px;
+    bottom: -100px;
 
     transform: rotate(10deg);
 }
