@@ -860,8 +860,13 @@ a {
         flex: 1;
     }
 
+    .footer {
+        padding: 28px 40px;
+    }
 
-
+    .footer-content {
+        gap: 30px;
+    }
 
 
 }
