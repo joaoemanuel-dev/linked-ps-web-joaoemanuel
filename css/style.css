@@ -806,3 +806,258 @@ a {
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
+
+/* ==========================================================
+   RESPONSIVIDADE
+   Desktop (>= 1024px): usa as regras acima.
+   Tablet  (769px a 1023px): ajustes leves.
+   Mobile  (<= 768px): layout em coluna.
+   ========================================================== */
+
+/* ---------- Tablet e telas menores que o desktop ---------- */
+@media (max-width: 1023px) {
+
+    /* texto do hero não pode passar da coluna dele */
+    .hero-main {
+        width: 100%;
+        max-width: 410px;
+    }
+    
+    .hero-main > p {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .feedbacks {
+        padding: 65px 40px;
+    }
+
+    .feedbacks-content {
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: auto;
+        flex: 1;
+    }
+    
+    .feedbacks-image {
+        flex-shrink: 0; /* nao fica expremida pelo flex box*/
+
+        width: 300px;
+        height: 380px;
+    }
+
+    .contact {
+        padding: 25px 40px 60px;
+    }
+
+    .contact-top {
+        gap: 40px;
+    }
+
+    .contact-map {
+        flex: 1;
+    }
+
+    .footer {
+        padding: 28px 40px;
+    }
+
+    .footer-content {
+        gap: 30px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    /* Header: logo em cima, menu embaixo (quebra de linha se faltar espaço) */
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    /* Hero: texto em cima, imagem embaixo */
+    .hero {
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: auto;
+        padding: 24px 20px 32px;
+    }
+
+    .hero-main {
+        max-width: none;
+        margin-top: 40px;
+    }
+
+    .hero-main > p {
+        max-width: none;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .hero-image {
+        position: static; /* sai de cima do texto e entra no fluxo normal */
+        width: 100%;
+        height: 60vw; /* proporcional à largura da tela */
+        min-height: 240px;
+        max-height: 420px;
+    }
+
+    .services {
+        min-height: 0;
+        padding: 60px 20px;
+    }
+
+    .services-header h2 {
+        font-size: 34px;
+    }
+
+    .services-content p {
+        font-size: 18px;
+    }
+
+    /* Horários */
+    .schedule {
+        min-height: 0;
+        padding: 50px 16px;
+    }
+
+    .schedule-header h2 {
+        font-size: 34px;
+    }
+
+    .schedule-card {
+        width: 100%;
+        min-height: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 16px;
+    }
+
+    .schedule-times {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .schedule-row {
+        font-size: 16px;
+    }
+
+    .decoration-left,
+    .decoration-right,
+    .contact-decoration {
+        width: 300px;
+    }
+
+    .decoration-left {
+        left: -120px;
+    }
+
+    .decoration-right {
+        top: -120px;
+        right: -100px;
+    }
+
+    /* Feedbacks */
+    .feedbacks {
+        min-height: 0;
+        padding: 50px 20px;
+    }
+
+    .feedbacks-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: 100%;
+    }
+
+    .feedbacks-text h2 {
+        font-size: 34px;
+    }
+
+    .feedbacks-image { /*imagem diminui junto com o celular, mas não ultrapassa 370px*/
+        width: 100%;
+        max-width: 370px;
+        height: 320px;
+    }
+
+    /* Contato */
+    .contact {
+        min-height: 0;
+        padding: 40px 20px;
+    }
+
+    .contact-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .contact-address {
+        width: 100%;
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .contact-map {
+        max-width: none;
+        height: 240px;
+    }
+
+    .contact-form-container {
+        padding: 20px 16px 24px;
+    }
+
+    .contact-form-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .form-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    /* Footer: 4 colunas viram 2x2 */
+    .footer {
+        padding: 32px 20px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 20px;
+    }
+
+    .footer-column h2 {
+        margin-bottom: 14px;
+    }
+
+}
