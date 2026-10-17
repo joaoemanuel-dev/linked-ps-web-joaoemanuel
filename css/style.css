@@ -1045,4 +1045,19 @@ a {
         height: 1px;
     }
 
+    /* Footer: 4 colunas viram 2x2 */
+    .footer {
+        padding: 32px 20px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 20px;
+    }
+
+    .footer-column h2 {
+        margin-bottom: 14px;
+    }
+
 }
