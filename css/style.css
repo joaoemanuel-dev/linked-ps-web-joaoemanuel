@@ -828,4 +828,26 @@ a {
         max-width: 390px;
     }
 
+    .feedbacks {
+        padding: 65px 40px;
+    }
+
+    .feedbacks-content {
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: auto;
+        flex: 1;
+    }
+    
+    .feedbacks-image {
+        flex-shrink: 0; /* nao fica expremida pelo flex box*/
+
+        width: 300px;
+        height: 380px;
+    }
+
+
+
 }
