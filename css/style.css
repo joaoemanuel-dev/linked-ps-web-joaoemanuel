@@ -848,6 +848,20 @@ a {
         height: 380px;
     }
 
+    .contact {
+        padding: 25px 40px 60px;
+    }
+
+    .contact-top {
+        gap: 40px;
+    }
+
+    .contact-map {
+        flex: 1;
+    }
+
+
+
 
 
 }
