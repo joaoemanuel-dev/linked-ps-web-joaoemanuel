@@ -939,6 +939,48 @@ a {
         font-size: 18px;
     }
 
+    /* Horários */
+    .schedule {
+        min-height: 0;
+        padding: 50px 16px;
+    }
 
+    .schedule-header h2 {
+        font-size: 34px;
+    }
+
+    .schedule-card {
+        width: 100%;
+        min-height: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 16px;
+    }
+
+    .schedule-times {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .schedule-row {
+        font-size: 16px;
+    }
+
+    .decoration-left,
+    .decoration-right,
+    .contact-decoration {
+        width: 300px;
+    }
+
+    .decoration-left {
+        left: -120px;
+    }
+
+    .decoration-right {
+        top: -120px;
+        right: -100px;
+    }
+
+    
 
 }
