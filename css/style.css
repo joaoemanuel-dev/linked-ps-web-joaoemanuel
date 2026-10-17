@@ -892,6 +892,40 @@ a {
         font-size: 14px;
     }
 
-    
+    /* Hero: texto em cima, imagem embaixo */
+    .hero {
+        height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: auto;
+        padding: 24px 20px 32px;
+    }
+
+    .hero-main {
+        max-width: none;
+        margin-top: 40px;
+    }
+
+    .hero-main > p {
+        max-width: none;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .hero-image {
+        position: static; /* sai de cima do texto e entra no fluxo normal */
+        width: 100%;
+        height: 60vw; /* proporcional à largura da tela */
+        min-height: 240px;
+        max-height: 420px;
+    }
+
+
 
 }
