@@ -981,6 +981,29 @@ a {
         right: -100px;
     }
 
-    
+    /* Feedbacks */
+    .feedbacks {
+        min-height: 0;
+        padding: 50px 20px;
+    }
+
+    .feedbacks-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: 100%;
+    }
+
+    .feedbacks-text h2 {
+        font-size: 34px;
+    }
+
+    .feedbacks-image { /*imagem diminui junto com o celular, mas não ultrapassa 370px*/
+        width: 100%;
+        max-width: 370px;
+        height: 320px;
+    }
 
 }
