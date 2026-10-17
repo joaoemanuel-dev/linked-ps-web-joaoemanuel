@@ -776,6 +776,13 @@ a {
     outline-offset: 4px;
 }
 
+.social-link img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
 .footer-column p {
     margin-bottom: 5px;
 
