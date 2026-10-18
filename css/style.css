@@ -704,7 +704,7 @@ a {
 .contact-decoration {
     position: absolute;
 
-    opacity: 0.25;
+    opacity: 0.99;
 
     pointer-events: none;
 
@@ -712,21 +712,21 @@ a {
 }
 
 .contact-decoration-left {
-    width: 500px;
+    width: 450px;
 
-    left: -100px;
+    left: -10px;
     top: -100px;
 
-    transform: rotate(-15deg);
+    transform: rotate(0deg);
 }
 
 .contact-decoration-right {
-    width: 500px;
+    width: 450px;
 
-    right: -100px;
-    bottom: -100px;
+    right: -10px;
+    bottom: -170px;
 
-    transform: rotate(10deg);
+    transform: rotate(180deg);
 }
 
 .footer {
