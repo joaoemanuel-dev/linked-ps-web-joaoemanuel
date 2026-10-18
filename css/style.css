@@ -74,7 +74,7 @@ a {
 }
 
 .hero-content {
-    position: relative; /* vai servir como referência para a imagem filha */
+    position: relative; /* se algum filho usar positiion absolute, me use como referência */
 
     width: 50%;
     height: 100%;
@@ -169,7 +169,7 @@ a {
 }
 
 .hero-image {
-    position: absolute; /* coloco em relação ao pai */
+    position: absolute; /* usar o pai como referência */
 
     top: 0;
     right: 0;
@@ -177,18 +177,19 @@ a {
     width: 50%;
     height: 100%;
 
-    overflow: hidden;
+    overflow: hidden; /* ocultar quem ultrapassar os limites, vai cortar o svg */
 
-    z-index: 1
+    z-index: 1;
+    
 }
 
 .hero-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
 
-    object-fit: cover; /* preenche tudo com imagem, sem deformar */
+    display: block; /* bloco sólido */
 
-    display: block; /* nova linha e ocupa largura toda */
+    transform: translateY(-100px); /* vai ajustando altura da imagem */
 }
 
 .services {
