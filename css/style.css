@@ -1,0 +1,1093 @@
+* { /*Tira os espaçamentos automáticos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* deslizar suavemente */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+}
+
+a {
+    text-decoration: none; /* tira o sublinhado padrão dos links */
+    color: inherit; /* herda cor do pai */
+}
+
+.header {
+    height: 64px;
+
+    display: flex; /* se organizam em única direção lado a lado */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* joga um pro lado e um pro outro */
+
+    padding: 0 28px;
+
+    border-top: 4px solid #222;
+    border-bottom: 1px solid #7da8ad;
+
+    background-color: #ffffff;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-left: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    gap: 34px; /* espaçamento entre os itens */
+}
+
+/* estiliza os links que ficam dentro da navbar */
+.navbar a {
+    font-size: 17px;
+
+    transition: opacity 0.2s ease; /* quando a opacidade mudar vai ser em 0.2s, suave */
+}
+
+.navbar a:hover {
+    opacity: 0.6; /* quando o mouse estiver em cima do link, 60% opaco*/
+}
+
+.navbar a:focus-visible { /* pra quem tiver navegando com tab*/
+    outline: 2px solid #005052; /* contorno */
+    outline-offset: 4px; /* 4 px afastado do link*/
+}
+
+.hero {
+    width: 100%;
+    min-height: 575px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+}
+
+.hero-content {
+    width: 100%;
+
+    padding: 20px 20px 0 46px;
+
+    z-index: 2;
+}
+
+.hero-image {
+    width: 100%;
+    height: 575px;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    display: block;
+}
+
+.hero-description {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-main {
+    width: 100%;
+    max-width: 410px;
+
+    margin-top: 123px;
+}
+
+.hero-main h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 35px;
+    font-weight: bold;
+
+    margin-bottom: 16px;
+}
+
+.hero-main > p {
+    width: 100%;
+    max-width: 390px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    line-height: 1.25;
+
+    margin-bottom: 42px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+}
+
+.button {
+    display: inline-flex; /* flex box e em linha ao mesmo tempo */
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    padding: 6px 13px;
+
+    border: 1px solid #004346;
+    border-radius: 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.button-primary {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.button-secondary {
+    background-color: #ffffff;
+    color: #005052;
+}
+
+.button-primary:hover {
+    background-color: #003f40;
+}
+
+.button-secondary:hover {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.button-icon { /* quadrado que arredonda as bordas*/
+    width: 16px;
+    height: 16px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+}
+
+.services {
+    min-height: 585px; /* mínimo, pode crescer se precisar */
+
+    padding: 95px 20px;
+
+    background-color: #004346;
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.services-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 50px;
+    font-weight: normal;
+
+    margin-bottom: 8px;
+}
+
+.services-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.section-line {
+    width: 130px;
+    height: 1px;
+
+    margin: 28px auto 35px; /* auto centraliza horizontalmente */
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.services-content {
+    max-width: 650px; /* pode dimninuir, mas nunca ultrpassar */
+
+    margin: 0 auto; /* centraliza a caixa */
+}
+
+.services-content p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 21px;
+    line-height: 1.28;
+}
+
+.schedule {
+    position: relative;
+
+    min-height: 620px;
+
+    padding: 60px 20px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    overflow: hidden;
+}
+
+.schedule-header {
+    position: relative;
+
+    text-align: center;
+
+    z-index: 2; /* garantir que fique na frente dos trevos */
+}
+
+.schedule-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+    font-weight: normal;
+
+    margin-bottom: 6px;
+}
+
+.schedule-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+}
+
+.schedule-line {
+    width: 140px;
+    height: 1px;
+
+    margin: 14px auto 22px;
+
+    background-color: #7da8ad;
+}
+
+.schedule-card {
+    position: relative;
+
+    width: 620px;
+    min-height: 300px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* distribui espaço em volta */
+
+    padding: 16px 8px;
+
+    border: 1px solid #557779;
+    border-radius: 9px;
+
+    background-color: rgba(255, 255, 255, 0.4); /* transparência do card pro fundo aparecer */
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    z-index: 2;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock-image {
+    width: 130px;
+    height: 130px;
+
+    object-fit: contain; /* mostre a imagem inteira, mesmo que sobre espaço */
+}
+
+.schedule-times {
+    width: 350px;
+
+    padding: 18px;
+
+    background-color: #004346;
+    color: #ffffff;
+
+    border-radius: 9px;
+}
+
+.schedule-row {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+}
+
+.schedule-row:not(:last-child) { /* coloca linha entre os horários */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.schedule-decoration { /* comum aos trevos */
+    position: absolute;
+
+    opacity: 0.99;
+
+    z-index: 0;
+
+    pointer-events: none; /* img não deve atrapalhar os cliques */
+}
+
+.decoration-left {
+    width: 450px;
+
+    left: -10px;
+    bottom: -120px;
+
+    transform: rotate(0deg);
+}
+
+.decoration-right {
+    width: 450px;
+
+    right: -10px;
+    top: -120px;
+
+    transform: rotate(180deg); /* copia o inferior esquerdo, aí só gira ele*/
+}
+
+.feedbacks {
+    min-height: 610px;
+
+    padding: 65px 65px;
+
+    background-color: #004346;
+    color: #ffffff;
+}
+
+.feedbacks-content {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex; /* texto de um lado imagem do outro */
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+.feedbacks-text {
+    width: 460px;
+}
+
+.feedbacks-text h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 52px;
+    font-weight: normal;
+
+    margin-bottom: 4px;
+}
+
+.feedbacks-subtitle {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+.feedbacks-line {
+    width: 130px;
+    height: 1px;
+
+    margin-bottom: 38px;
+
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.feedback-item {
+    margin-bottom: 25px;
+}
+
+.feedback-item p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+.feedback-item span {
+    display: block; 
+
+    margin-left: 16px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+}
+
+.feedbacks-image {
+    width: 370px;
+    height: 455px;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.feedbacks-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover; /* preenche completamente a caixa sem deformar */
+
+    display: block; /* ocupa toda a extensão */
+}
+
+.contact {
+    position: relative; /* vamos posicionar os trevos com absolute */
+
+    min-height: 740px;
+
+    padding: 25px 65px 60px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    overflow: hidden;
+}
+
+.contact-top {
+    position: relative;
+
+    max-width: 900px;
+
+    margin: 0 auto 65px;
+
+    display: flex; /* lado a lado */
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 80px;
+
+    z-index: 2;
+}
+
+.contact-address {
+    width: 340px;
+    min-height: 315px;
+
+    padding: 45px 32px;
+
+    background-color: #004346;
+    color: #ffffff;
+
+    border-radius: 9px;
+}
+
+.contact-address h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 20px;
+    font-weight: normal;
+
+    margin-bottom: 25px;
+}
+
+.address-content {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.address-icon {
+    width: 18px;
+    height: 24px;
+
+    object-fit: contain;
+
+    margin-top: 1px;
+
+    flex-shrink: 0;
+}
+
+.address-content strong {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.address-content p {
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.contact-map {
+    max-width: 600px;
+    height: 315px;
+
+    overflow: hidden;
+
+    border: 1px solid #a0a0a0;
+    border-radius: 9px;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contact-map img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.contact-form-container {
+    position: relative;
+
+    max-width: 640px;
+
+    margin: 0 auto;
+
+    padding: 20px 24px 28px;
+
+    border: 1px solid #6f9a9c;
+    border-radius: 9px;
+
+    background-color: rgba(255, 255, 255, 0.72);
+
+    z-index: 2;
+}
+
+.contact-form-header {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+}
+
+.contact-form-header h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.form-divider {
+    width: 1px;
+    height: 28px;
+
+    background-color: #005052;
+}
+
+.contact-form-header p {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 13px;
+
+    color: #80a4a6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+}
+
+.contact-form label {
+    padding: 4px 10px 2px;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    border-radius: 10px 10px 0 0;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    padding: 7px 10px;
+
+    border: none;
+    outline: none;
+
+    background-color: #005052;
+    color: #ffffff;
+
+    font-size: 14px;
+}
+
+.contact-form input {
+    height: 22px;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-form textarea {
+    height: 45px;
+
+    resize: none;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-button {
+    align-self: center;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 10px;
+
+    padding: 6px 14px;
+
+    border: 1px solid #005052;
+    border-radius: 14px;
+
+    background-color: #ffffff;
+    color: #005052;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #005052;
+    color: #ffffff;
+}
+
+.contact-decoration {
+    position: absolute;
+
+    opacity: 0.99;
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+.contact-decoration-left {
+    width: 450px;
+
+    left: -10px;
+    top: -100px;
+
+    transform: rotate(0deg);
+}
+
+.contact-decoration-right {
+    width: 450px;
+
+    right: -10px;
+    bottom: -170px;
+
+    transform: rotate(180deg);
+}
+
+.footer {
+    padding: 28px 60px;
+
+    background-color: #004346;
+    color: #ffffff;
+}
+
+.footer-content {
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.footer-column h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    margin-bottom: 22px;
+}
+
+.footer-column a {
+    margin-bottom: 7px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+
+    color: #ffffff;
+
+    transition: opacity 0.2s ease;
+}
+
+.footer-column a:hover {
+    opacity: 0.7;
+}
+
+.footer-column a:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 4px;
+}
+
+.social-link img {
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+}
+
+.footer-column p {
+    margin-bottom: 5px;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 17px;
+    line-height: 1.25;
+}
+
+.social-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE
+   Desktop (>= 1024px): usa as regras acima.
+   Tablet  (769px a 1023px): ajustes leves.
+   Mobile  (<= 768px): layout em coluna.
+   ========================================================== */
+
+/* ---------- Tablet e telas menores que o desktop ---------- */
+@media (max-width: 1023px) {
+
+    /* texto do hero não pode passar da coluna dele */
+    .hero-main {
+        width: 100%;
+        max-width: 410px;
+    }
+    
+    .hero-main > p {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .feedbacks {
+        padding: 65px 40px;
+    }
+
+    .feedbacks-content {
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: auto;
+        flex: 1;
+    }
+    
+    .feedbacks-image {
+        flex-shrink: 0; /* nao fica expremida pelo flex box*/
+
+        width: 300px;
+        height: 380px;
+    }
+
+    .contact {
+        padding: 25px 40px 60px;
+    }
+
+    .contact-top {
+        gap: 40px;
+    }
+
+    .contact-map {
+        flex: 1;
+    }
+
+    .footer {
+        padding: 28px 40px;
+    }
+
+    .footer-content {
+        gap: 30px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    /* Header: logo em cima, menu embaixo (quebra de linha se faltar espaço) */
+    .header {
+        height: auto;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    /* Hero: texto em cima, imagem embaixo */
+    .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding: 24px 20px 32px;
+    }
+
+    .hero-description {
+        font-size: 18px;
+    }
+
+    .hero-main {
+        width: 100%;
+        max-width: none;
+
+        margin-top: 40px;
+    }
+
+    .hero-main h1 {
+        font-size: 30px;
+    }
+
+    .hero-main > p {
+        width: 100%;
+        max-width: none;
+
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+
+        overflow: hidden;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+
+        object-fit: contain;
+
+        display: block;
+    }
+
+    .services {
+        min-height: 0;
+        padding: 60px 20px;
+    }
+
+    .services-header h2 {
+        font-size: 34px;
+    }
+
+    .services-content p {
+        font-size: 18px;
+    }
+
+    /* Horários */
+    .schedule {
+        min-height: 0;
+        padding: 50px 16px;
+    }
+
+    .schedule-header h2 {
+        font-size: 34px;
+    }
+
+    .schedule-card {
+        width: 100%;
+        min-height: 0;
+        flex-direction: column;
+        gap: 20px;
+        padding: 24px 16px;
+    }
+
+    .schedule-times {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .schedule-row {
+        font-size: 16px;
+    }
+
+    .decoration-left,
+    .decoration-right,
+    .contact-decoration {
+        width: 300px;
+    }
+
+    .decoration-left {
+        left: -120px;
+    }
+
+    .decoration-right {
+        top: -120px;
+        right: -100px;
+    }
+
+    /* Feedbacks */
+    .feedbacks {
+        min-height: 0;
+        padding: 50px 20px;
+    }
+
+    .feedbacks-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .feedbacks-text {
+        width: 100%;
+    }
+
+    .feedbacks-text h2 {
+        font-size: 34px;
+    }
+
+    .feedbacks-image { /*imagem diminui junto com o celular, mas não ultrapassa 370px*/
+        width: 100%;
+        max-width: 370px;
+        height: 320px;
+    }
+
+    /* Contato */
+    .contact {
+        min-height: 0;
+        padding: 40px 20px;
+    }
+
+    .contact-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .contact-address {
+        width: 100%;
+        min-height: 0;
+        padding: 32px 24px;
+    }
+
+    .contact-map {
+        max-width: none;
+        height: 240px;
+    }
+
+    .contact-form-container {
+        padding: 20px 16px 24px;
+    }
+
+    .contact-form-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .form-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    /* Footer: 4 colunas viram 2x2 */
+    .footer {
+        padding: 32px 20px;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 20px;
+    }
+
+    .footer-column h2 {
+        margin-bottom: 14px;
+    }
+
+}
